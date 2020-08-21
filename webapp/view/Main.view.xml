@@ -14,7 +14,10 @@
 								<l:BlockLayoutCell id="Cell1" width="1">
 									<l:content>
 										<viz:VizFrame id="idVizFrame1" uiConfig="{applicationSet: 'fiori'}"
-                                             vizType="bar" vizProperties="{title: {text: 'Sales Per Customer'}}">
+                                             vizType="bar" 
+                                             vizProperties="{ 
+                                                title: {text: 'Sales Per Customer'},
+                                                plotArea:{dataLabel: {visible:true}} }">
                	                            <viz:dataset>
                	                               <viz.data:FlattenedDataset data="{/SalesCustomerSet}">
                	  	                            <viz.data:dimensions>
@@ -35,7 +38,10 @@
 							    <l:BlockLayoutCell id="Cell2" width="1">
 									<l:content>
 											<viz:VizFrame id="idVizFrame2" uiConfig="{applicationSet: 'fiori'}"
-                                             vizType="column" vizProperties="{title: {text: 'Sales Per Product'}}">
+                                             vizType="column" 
+                                             vizProperties="{ 
+                                                title: {text: 'Sales Per Product'},
+                                                plotArea:{dataLabel: {visible:true}} }">
                	                            <viz:dataset>
                	                               <viz.data:FlattenedDataset data="{/SalesProductSet}">
                	  	                            <viz.data:dimensions>
@@ -60,7 +66,10 @@
 								<l:BlockLayoutCell id="Cell3" width="1">
 									<l:content>
 											<viz:VizFrame id="idVizFrame3" uiConfig="{applicationSet: 'fiori'}"
-                                             vizType="pie" vizProperties="{title: {text: 'Sales in Currencies'}}">
+                                             vizType="pie"
+                                             vizProperties="{ 
+                                                title: {text: 'Sales in Currencies'},
+                                                plotArea:{dataLabel: {visible:true}} }">
                	                            <viz:dataset>
                	                               <viz.data:FlattenedDataset data="{/SalesCurrencySet}">
                	  	                            <viz.data:dimensions>
@@ -81,7 +90,10 @@
 							    <l:BlockLayoutCell id="Cell4" width="1">
 									<l:content>
 											<viz:VizFrame id="idVizFrame4" uiConfig="{applicationSet: 'fiori'}"
-                                             vizType="donut" vizProperties="{title: {text: 'Sales in Country'}}">
+                                             vizType="donut"
+                                             vizProperties="{ 
+                                                title: {text: 'Sales in Country'},
+                                                plotArea:{dataLabel: {visible:true}} }">
                	                            <viz:dataset>
                	                               <viz.data:FlattenedDataset data="{/SalesCountrySet}">
                	  	                            <viz.data:dimensions>
