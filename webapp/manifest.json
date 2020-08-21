@@ -39,7 +39,10 @@
 			"tablet": true,
 			"phone": true
 		},
-		"supportedThemes": ["sap_hcb", "sap_belize"]
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
 	},
 	"sap.ui5": {
 		"rootView": {
@@ -81,22 +84,28 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
 				"viewPath": "zchartaZCHART_APP.view",
 				"controlId": "idApp"
 			},
-			"routes": [{
-				"name": "default",
-				"pattern": "",
-				"titleTarget": "",
-				"greedy": false,
-				"target": ["default"]
-			}],
+			"routes": [
+				{
+					"name": "default",
+					"pattern": "",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"default"
+					]
+				}
+			],
 			"targets": {
 				"default": {
 					"viewType": "XML",
@@ -110,5 +119,9 @@
 				}
 			}
 		}
+	},
+	"sap.platform.abap": {
+		"uri": "/sap/bc/ui5_ui5/sap/zchart_anay_app/webapp",
+		"_version": "1.1.0"
 	}
 }

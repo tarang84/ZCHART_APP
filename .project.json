@@ -26,11 +26,12 @@
     }
   ],
   "build": {
-    "buildRequired": true,
+    "buildRequired": false,
     "sourceFolder": "webapp",
     "targetFolder": "dist",
     "excludedFolders": [],
-    "excludedFiles": []
+    "excludedFiles": [],
+    "lastBuildDateTime": "Fri, 21 Aug 2020 11:32:13 GMT"
   },
   "translation": {
     "translationDomain": "",
@@ -57,5 +58,9 @@
     "loadJSONFiles": false,
     "loadCustomRequests": false,
     "mockRequestsFilePath": ""
+  },
+  "deploy": {
+    "destination": "S4D",
+    "name": "ZCHART_ANAY_APP"
   }
 }
